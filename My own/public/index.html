@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+
+    <div>
+      <button id="logInButton" onclick="googleLogIn()">Social Login</button>
+      <div id="profile" class="image">
+        <img id="profile_img" src="" class="img-circle elevation-2" alt="User Image">
+      </div>
+      <div class="info" id="profile_info">
+        <a id="profile_name" href="#" class="d-block"></a>
+      </div>
+      <button id="logOutButton" onclick="logOut()">LogOut</button>
+    </div>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-analytics.js"></script>
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-firestore.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
